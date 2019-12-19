@@ -1,4 +1,6 @@
 dist/
+web/js/
+web/css/
 
 # Logs
 logs

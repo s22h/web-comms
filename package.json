@@ -2,10 +2,20 @@
   "name": "web-comms",
   "version": "0.1.0",
   "description": "A communication platform, including text, voice and screen sharing.",
-  "main": "src/main.js",
+  "main": "dist/main.js",
   "scripts": {
+    "compile-client": "tsc -p ./src/client/",
+    "compile-server": "tsc -p ./src/server/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Steffen Franzkoch <frako@frako.dev>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.21"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fastify": "^2.11.0",
+    "fastify-static": "^2.5.1"
+  }
 }
